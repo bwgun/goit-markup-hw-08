@@ -1,0 +1,99 @@
+/*Форма подписки*/
+.footer-right-side{
+  width: 100%;
+  @media screen and (max-width: 1199.98px){
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px){
+    width: 570px;
+    margin-left: auto;
+  }
+}
+.footer-form-title{
+    display: block;
+    margin-bottom: 20px;
+    
+    font-family: var(--main-font);
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--secondary-txt-white);
+    }
+  .footer-form{
+    display: flex;
+    @media screen and (max-width: 1199.98px){
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .footer-right-side{
+    margin-left: auto;
+  }
+  
+  .footer-form__input{
+    padding: 15px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    font-family: var(--main-font);
+    font-size: 16px;
+    line-height: 1.25;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+    transition: border var(--animation);
+    cursor: pointer;
+
+    width: 290px;
+
+    @media screen and (min-width: 480px) and (max-width: 1199.98px){
+      width: 450px;
+    }
+
+    @media screen and (max-width: 1199.98px){
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: 1199.98px){
+      width: 358px;
+      margin-right: 12px;
+    }
+  
+    &:hover, 
+    &:focus{
+        border-color: var(--accent-cl);
+      }
+  }
+
+  
+  .footer-form__btn{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  background-color: var(--bgd-button);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  gap: 10px;
+  width: 200px;
+  height: 50px;
+  padding: 10px 29px;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--main-bg-cl);
+  transition: background-color var(--animation);
+  cursor: pointer;
+
+  &:hover,
+  &:focus{
+  background-color: var(--secondary-bgd-button);
+  }
+  }
+  
+  .footer-form__icon{
+    fill: var(--icon-footer-color);
+  }
+  

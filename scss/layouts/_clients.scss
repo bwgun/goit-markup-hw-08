@@ -1,0 +1,64 @@
+/*-----------------
+| Clients-group section
+-------------------*/
+  .clients-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+.clients-group__item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
+  margin: 15px;
+
+  @media screen and (min-width: 480px) and (max-width: 768px){
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  
+    // tablet screen
+      @include mq(tablet){
+        flex-basis: calc((100% - 90px) / 3);
+        }
+          
+    // desktop screen
+        @include mq(desktop){
+          flex-basis: calc((100% - 180px) / 6);
+        }
+}
+  .clients-group__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--icon-main-color);
+    border-radius: 4px;
+    width: 210px;
+    height: 92px;
+  
+    transition: border var(--animation);
+    
+    // tablet screen
+    @include mq(tablet){
+    width: 226px;
+    }
+      
+    // desktop screen
+      @include mq(desktop){
+        width: 170px;
+      }
+
+    &:hover,
+    &:focus {
+    border: 1px solid var(--icon-accent-cl);
+    }
+  }
+
+  .clients-group__link:hover .clients-group__icon,
+  .clients-group__link:focus .clients-group__icon {
+    fill: var(--icon-accent-cl);
+  }
+  .clients-group__icon {
+    fill: var(--icon-main-color);
+    transition: fill var(--animation);
+  }
